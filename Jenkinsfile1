@@ -1,8 +1,23 @@
 node{
+agent any
+
+		stages {
+		    stage('Checkout') {
+		        steps {
+					checkout scm	
+		        }
+		    }
+			stage('Build') {
+		        steps {
+					sh 'mvn install'
+		        }
+			}
+
 stage('email nofitions'){
 mail bcc: '', body: '''hi team ,
 jenkins is running 
 regards
 sumit ''', cc: '', from: '', replyTo: '', subject: 'jenkins job', to: 'neo2sumitghosh@gmail.com'
+}
 }
 }
