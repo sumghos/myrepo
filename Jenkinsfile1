@@ -1,7 +1,5 @@
 node{
-agent any
- stages {
-  stage('Checkout') {
+stage('Checkout') {
    steps {
      checkout scm	
  }
@@ -17,6 +15,5 @@ agent any
    jenkins is running 
    regards
     sumit ''', cc: '', from: '', replyTo: '', subject: 'jenkins job', to: 'neo2sumitghosh@gmail.com'
-}
 }
 }
