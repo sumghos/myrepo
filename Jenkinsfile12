@@ -69,7 +69,7 @@
 		    ) ;
 		    }
 			else {
-			echo "**** File : ${artifactPath}, not found ****};
+			echo "**** File : ${artifactPath}, not found **** ";
 		   }
            }
 
