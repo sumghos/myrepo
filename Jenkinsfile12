@@ -24,7 +24,7 @@
 		        steps {
 		        script {
 		        // Let's clone the code
-		       	checkout scm
+		       	git 'https://github.com/sumghos/myrepo.git'
 		       	}
 		        }
 		    }
