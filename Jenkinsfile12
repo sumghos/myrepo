@@ -4,9 +4,8 @@
 		}
 		tool {
 		// This should be same as you have install in jenkins
-		maven 'maven'
-
-		}
+		maven 'apache-maven-3.6.2'
+         }
 		environment {
 		// this can be nexus3 or nexus2
 	     NEXUS_VERSION = "nexus3"
