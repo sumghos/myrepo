@@ -53,14 +53,14 @@
 			if(artifactExists){
 			echo "**** File : ${artifactPath}  Group : ${pom.groupID} Packaging : ${pom.packaging} Version : ${pom.version} ****"
 			nexusArtifactUploader(
-			nexusVersion : NEXUS_VERSION ;
-			protocol : NEXUS_PROTOCOL ;
-			nexusUrl : NEXUS_URL;
-			groupID : pom.groupID ;
-			version : $ { BUILD_NUMBER } ;
-			repository : NEXUS_REPOSITORY ;
-			credential : NEXUS_CREDENTIAL ;
-			artifact[
+			nexusVersion : NEXUS_VERSION ,
+			protocol : NEXUS_PROTOCOL ,
+			nexusUrl : NEXUS_URL,
+			groupID : pom.groupID ,
+			version : $ { BUILD_NUMBER } ,
+			repository : NEXUS_REPOSITORY ,
+			credential : NEXUS_CREDENTIAL ,
+			artifacts: [
 			//artifact generated such as jar , ear , war
 			[
 			artifactId : pom.artifact.Id,classifier : '',file: "pom.xml",type: "pom"
