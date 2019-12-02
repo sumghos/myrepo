@@ -33,7 +33,7 @@
 		          script {
 		          //If you are windows then you should use "bat" step
 		          //since
-					bat (/ ${M2_HOME}\bin\mvn install/)
+					bat (/${M2_HOME}\bin\mvn install/)
 		        }
 		        }
 			}
