@@ -2,7 +2,7 @@
 		agent {
 		label 'master'
 		}
-		tool {
+		tools {
 		// This should be same as you have install in jenkins
 		maven 'apache-maven-3.6.2'
          }
