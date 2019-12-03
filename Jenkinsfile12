@@ -45,7 +45,7 @@
 			//find build artifact under target folder
 			fileByGlob = findFiles(glob :"target/*.${pom.packaging}")
 			// print some information from the artifact found
-			echo "${fileByGlob[0].name} ${fileByGlob[0].path} ${fileByGlob[0].directory} ${fileByGlob[0].length} ${fileByGlob[0].LastModified} "
+			echo "${fileByGlob[0].name} ${fileByGlob[0].path} ${fileByGlob[0].directory} ${fileByGlob[0].length} ${fileByGlob[0].lastModified} "
 			//extract the path from the file found
 			artifactPath = fileByGlob[0].path;
 			//Assign to a boolean response verifying if the artifact name exists
