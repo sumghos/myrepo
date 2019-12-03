@@ -33,7 +33,7 @@
 		          script {
 		          //If you are windows then you should use "bat" step
 		          //since
-					bat (/${MAVEN_HOME}\bin\mvn package/ )
+					bat (/${MAVEN_HOME}\\bin\\mvn package/ )
 		        }
 		        }
 			}
