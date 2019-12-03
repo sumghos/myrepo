@@ -43,7 +43,7 @@
 			//read POM.XML file using 'readMavenPom' step
 			pom = readMavenPom file : "pom.xml"
 			//find build artifact under target folder
-			fileByGlob = findFile(glob :"target/*.${pom.packaging}")
+			fileByGlob = findFiles(glob :"target/*.${pom.packaging}")
 			// print some information from the artifact found
 			echo "${fileByGlob[0].name} ${fileByGlob[0].path} ${fileByGlob[0].directory} ${fileByGlob[0].length} ${fileByGlob[0].LastModified} "
 			//extract the path from the file found
