@@ -16,7 +16,7 @@
 	     //Repo where we upload the artifact
 	     NEXUS_REPOSITORY = "gamat-kurt"
 	     //Jenkins credential to authenticate to nexus
-	     NEXUS_CREDENTIAL = "nexus_credential"
+	     NEXUS_CREDENTIAL = "nexus credential"
 	    }
 
 		stages {
