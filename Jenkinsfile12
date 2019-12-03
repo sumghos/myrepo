@@ -59,7 +59,7 @@
 			groupId : pom.groupId ,
 			version : '${BUILD_NUMBER}' ,
 			repository : NEXUS_REPOSITORY ,
-			credentialId : NEXUS_CREDENTIAL_ID ,
+			credentialsId : NEXUS_CREDENTIAL_ID ,
 			artifacts: [
 			//artifact generated such as jar , ear , war
 			[
