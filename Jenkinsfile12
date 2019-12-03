@@ -51,7 +51,7 @@
 			//Assign to a boolean response verifying if the artifact name exists
 			artifactExists = fileExists artifactPath;
 			if(artifactExists){
-			echo "**** File : ${artifactPath}  Group : ${pom.groupId} Packaging : ${pom.packaging} Version : ${pom.version} ****"
+			echo "**** File : ${artifactPath},Group : ${pom.groupId},Packaging : ${pom.packaging},Version : ${pom.version} ****"
 			nexusArtifactUploader(
 			nexusVersion : NEXUS_VERSION ,
 			protocol : NEXUS_PROTOCOL ,
