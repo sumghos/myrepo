@@ -63,8 +63,13 @@
 			artifacts: [
 			//artifact generated such as jar , ear , war
 			[
-			artifactId : pom.artifactId,classifier : '',file: "pom.xml",type: "pom"
-			]
+			artifactId : pom.artifactId,classifier : '',file: artifactPath ,type: pom.packaging
+			],
+			//Lets upload the pom.xml file for additional information like transitive dependencies
+			[
+             			artifactId : pom.artifactId,classifier : '',file: "pom.xml",type: "pom"
+             			]
+
 			]
 		    ) ;
 		    }
